@@ -1,40 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+Course Registration App
+A simple Next.js course registration project built with TypeScript and reusable React components. The app includes pages for viewing available courses, checking registered courses, and adding a course through a basic form interface. 
 
-## Getting Started
+Features
+View a list of available courses with course name, code, and credit value. 
 
-First, run the development server:
+Reusable CourseCard component with a registration button for each course. 
 
-```bash
+Add a course using a small interactive form component. 
+
+Track or display credit-related information with a dedicated credit tracker component. 
+
+Shared layout and UI pieces such as Navbar, Header, Footer, and Main container components. 
+
+Tech Stack
+Next.js with the Pages Router structure through files such as app.tsx, index.tsx, courses.tsx, and my-courses.tsx. 
+
+TypeScript for component props and page structure. 
+
+React hooks like useState for handling form input and UI feedback. 
+
+Project Structure
+bash
+components/
+├── AddCourse.tsx
+├── CourseCard.tsx
+├── CreditTracker.tsx
+├── Footer.tsx
+├── Header.tsx
+├── Main.tsx
+├── Navbar.tsx
+└── RegisterButton.tsx
+
+pages/
+├── _app.tsx
+├── _document.tsx
+├── courses.tsx
+├── index.tsx
+└── my-courses.tsx
+Getting Started
+Clone the repository.
+
+Open the project folder in VS Code.
+
+Install dependencies:
+
+bash
+npm install
+Start the development server:
+
+bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 in the browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Pages
+Home
+The homepage serves as the starting point of the app and links into the course registration experience. 
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Courses
+This page displays available courses using reusable course cards that show the course title, code, and credits. 
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+My Courses
+This page is intended to show the user's selected or registered courses. 
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+Components
+AddCourse.tsx handles course input and displays a confirmation message after submission. 
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+CourseCard.tsx presents individual course details in a card layout. 
 
-## Learn More
+CreditTracker.tsx is used for showing academic credit information. 
 
-To learn more about Next.js, take a look at the following resources:
+RegisterButton.tsx provides a call-to-action for course registration. 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+Navbar.tsx, Header.tsx, Footer.tsx, and Main.tsx support the overall page layout. 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Purpose
+This project demonstrates core front-end development skills with reusable components, page-based routing, props, and simple state management in a student-focused academic app. It is a solid college project for showing understanding of Next.js structure and React component design. 
